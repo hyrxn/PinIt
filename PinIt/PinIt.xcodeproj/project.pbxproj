@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC8E88602BFF7CC3001F6BB4 /* PinIt Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EC8E885F2BFF7CC3001F6BB4 /* PinIt Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC8E88652BFF7CC3001F6BB4 /* PinItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E88642BFF7CC3001F6BB4 /* PinItApp.swift */; };
+		EC8E88672BFF7CC3001F6BB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E88662BFF7CC3001F6BB4 /* ContentView.swift */; };
+		EC8E88692BFF7CC9001F6BB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8E88682BFF7CC9001F6BB4 /* Assets.xcassets */; };
+		EC8E886C2BFF7CC9001F6BB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8E886B2BFF7CC9001F6BB4 /* Preview Assets.xcassets */; };
+		EC8E88772BFF7CD6001F6BB4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E88762BFF7CD6001F6BB4 /* LocationManager.swift */; };
+		EC8E88792BFF8217001F6BB4 /* SavedPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E88782BFF8217001F6BB4 /* SavedPlaceView.swift */; };
+		EC8E887B2BFF89B8001F6BB4 /* AddPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E887A2BFF89B8001F6BB4 /* AddPlaceView.swift */; };
+		EC8E887D2BFF92C3001F6BB4 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E887C2BFF92C3001F6BB4 /* Place.swift */; };
+		EC8E887F2C01BDC0001F6BB4 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E887E2C01BDC0001F6BB4 /* NavView.swift */; };
+		EC8E88862C044C99001F6BB4 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E88852C044C99001F6BB4 /* ContentViewModel.swift */; };
+		EC8E88882C044DA7001F6BB4 /* AddPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E88872C044DA7001F6BB4 /* AddPlaceViewModel.swift */; };
+		EC8E888A2C044F51001F6BB4 /* SavedPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E88892C044F51001F6BB4 /* SavedPlaceViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC8E88612BFF7CC3001F6BB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC8E88532BFF7CC3001F6BB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC8E885E2BFF7CC3001F6BB4;
+			remoteInfo = "PinIt Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC8E88722BFF7CC9001F6BB4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EC8E88602BFF7CC3001F6BB4 /* PinIt Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EC8E88592BFF7CC3001F6BB4 /* PinIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8E885F2BFF7CC3001F6BB4 /* PinIt Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PinIt Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8E88642BFF7CC3001F6BB4 /* PinItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinItApp.swift; sourceTree = "<group>"; };
+		EC8E88662BFF7CC3001F6BB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EC8E88682BFF7CC9001F6BB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC8E886B2BFF7CC9001F6BB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC8E88762BFF7CD6001F6BB4 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		EC8E88782BFF8217001F6BB4 /* SavedPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlaceView.swift; sourceTree = "<group>"; };
+		EC8E887A2BFF89B8001F6BB4 /* AddPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceView.swift; sourceTree = "<group>"; };
+		EC8E887C2BFF92C3001F6BB4 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		EC8E887E2C01BDC0001F6BB4 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		EC8E88852C044C99001F6BB4 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		EC8E88872C044DA7001F6BB4 /* AddPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceViewModel.swift; sourceTree = "<group>"; };
+		EC8E88892C044F51001F6BB4 /* SavedPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlaceViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC8E885C2BFF7CC3001F6BB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC8E88522BFF7CC3001F6BB4 = {
+			isa = PBXGroup;
+			children = (
+				EC8E88632BFF7CC3001F6BB4 /* PinIt Watch App */,
+				EC8E885A2BFF7CC3001F6BB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC8E885A2BFF7CC3001F6BB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC8E88592BFF7CC3001F6BB4 /* PinIt.app */,
+				EC8E885F2BFF7CC3001F6BB4 /* PinIt Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC8E88632BFF7CC3001F6BB4 /* PinIt Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				EC8E88832C044B36001F6BB4 /* Model */,
+				EC8E88842C044C7D001F6BB4 /* View Model */,
+				EC8E88642BFF7CC3001F6BB4 /* PinItApp.swift */,
+				EC8E88812C0433C4001F6BB4 /* Views */,
+				EC8E88822C043413001F6BB4 /* Manager */,
+				EC8E88682BFF7CC9001F6BB4 /* Assets.xcassets */,
+				EC8E886A2BFF7CC9001F6BB4 /* Preview Content */,
+			);
+			path = "PinIt Watch App";
+			sourceTree = "<group>";
+		};
+		EC8E886A2BFF7CC9001F6BB4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EC8E886B2BFF7CC9001F6BB4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC8E88812C0433C4001F6BB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC8E88662BFF7CC3001F6BB4 /* ContentView.swift */,
+				EC8E887A2BFF89B8001F6BB4 /* AddPlaceView.swift */,
+				EC8E88782BFF8217001F6BB4 /* SavedPlaceView.swift */,
+				EC8E887E2C01BDC0001F6BB4 /* NavView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC8E88822C043413001F6BB4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EC8E88762BFF7CD6001F6BB4 /* LocationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EC8E88832C044B36001F6BB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC8E887C2BFF92C3001F6BB4 /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC8E88842C044C7D001F6BB4 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC8E88852C044C99001F6BB4 /* ContentViewModel.swift */,
+				EC8E88872C044DA7001F6BB4 /* AddPlaceViewModel.swift */,
+				EC8E88892C044F51001F6BB4 /* SavedPlaceViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC8E88582BFF7CC3001F6BB4 /* PinIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8E88732BFF7CC9001F6BB4 /* Build configuration list for PBXNativeTarget "PinIt" */;
+			buildPhases = (
+				EC8E88572BFF7CC3001F6BB4 /* Resources */,
+				EC8E88722BFF7CC9001F6BB4 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC8E88622BFF7CC3001F6BB4 /* PBXTargetDependency */,
+			);
+			name = PinIt;
+			productName = PinIt;
+			productReference = EC8E88592BFF7CC3001F6BB4 /* PinIt.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		EC8E885E2BFF7CC3001F6BB4 /* PinIt Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8E886F2BFF7CC9001F6BB4 /* Build configuration list for PBXNativeTarget "PinIt Watch App" */;
+			buildPhases = (
+				EC8E885B2BFF7CC3001F6BB4 /* Sources */,
+				EC8E885C2BFF7CC3001F6BB4 /* Frameworks */,
+				EC8E885D2BFF7CC3001F6BB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PinIt Watch App";
+			productName = "PinIt Watch App";
+			productReference = EC8E885F2BFF7CC3001F6BB4 /* PinIt Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC8E88532BFF7CC3001F6BB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					EC8E88582BFF7CC3001F6BB4 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					EC8E885E2BFF7CC3001F6BB4 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = EC8E88562BFF7CC3001F6BB4 /* Build configuration list for PBXProject "PinIt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC8E88522BFF7CC3001F6BB4;
+			productRefGroup = EC8E885A2BFF7CC3001F6BB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC8E88582BFF7CC3001F6BB4 /* PinIt */,
+				EC8E885E2BFF7CC3001F6BB4 /* PinIt Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC8E88572BFF7CC3001F6BB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8E885D2BFF7CC3001F6BB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8E886C2BFF7CC9001F6BB4 /* Preview Assets.xcassets in Resources */,
+				EC8E88692BFF7CC9001F6BB4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC8E885B2BFF7CC3001F6BB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC8E88862C044C99001F6BB4 /* ContentViewModel.swift in Sources */,
+				EC8E88672BFF7CC3001F6BB4 /* ContentView.swift in Sources */,
+				EC8E88652BFF7CC3001F6BB4 /* PinItApp.swift in Sources */,
+				EC8E88792BFF8217001F6BB4 /* SavedPlaceView.swift in Sources */,
+				EC8E88882C044DA7001F6BB4 /* AddPlaceViewModel.swift in Sources */,
+				EC8E887D2BFF92C3001F6BB4 /* Place.swift in Sources */,
+				EC8E88772BFF7CD6001F6BB4 /* LocationManager.swift in Sources */,
+				EC8E887B2BFF89B8001F6BB4 /* AddPlaceView.swift in Sources */,
+				EC8E888A2C044F51001F6BB4 /* SavedPlaceViewModel.swift in Sources */,
+				EC8E887F2C01BDC0001F6BB4 /* NavView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC8E88622BFF7CC3001F6BB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC8E885E2BFF7CC3001F6BB4 /* PinIt Watch App */;
+			targetProxy = EC8E88612BFF7CC3001F6BB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EC8E886D2BFF7CC9001F6BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC8E886E2BFF7CC9001F6BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		EC8E88702BFF7CC9001F6BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PinIt Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = H68BB9ZMUS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PinIt;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This Applicaiton requires the device's location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This Applicaiton requires the device's location";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniaCresentia.PinIt.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		EC8E88712BFF7CC9001F6BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PinIt Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = H68BB9ZMUS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PinIt;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This Applicaiton requires the device's location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This Applicaiton requires the device's location";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniaCresentia.PinIt.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+		EC8E88742BFF7CC9001F6BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H68BB9ZMUS;
+				INFOPLIST_KEY_CFBundleDisplayName = PinIt;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniaCresentia.PinIt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EC8E88752BFF7CC9001F6BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H68BB9ZMUS;
+				INFOPLIST_KEY_CFBundleDisplayName = PinIt;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taniaCresentia.PinIt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC8E88562BFF7CC3001F6BB4 /* Build configuration list for PBXProject "PinIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8E886D2BFF7CC9001F6BB4 /* Debug */,
+				EC8E886E2BFF7CC9001F6BB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8E886F2BFF7CC9001F6BB4 /* Build configuration list for PBXNativeTarget "PinIt Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8E88702BFF7CC9001F6BB4 /* Debug */,
+				EC8E88712BFF7CC9001F6BB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8E88732BFF7CC9001F6BB4 /* Build configuration list for PBXNativeTarget "PinIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC8E88742BFF7CC9001F6BB4 /* Debug */,
+				EC8E88752BFF7CC9001F6BB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC8E88532BFF7CC3001F6BB4 /* Project object */;
+}
