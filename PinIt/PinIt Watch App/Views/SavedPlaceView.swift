@@ -11,6 +11,8 @@ import SwiftData
 struct SavedPlaceView: View {
     @StateObject var viewModel = SavedPlaceViewModel()
     
+    @Environment (\.modelContext) var context
+    
     var body: some View {
         NavigationStack{
             ScrollView{
@@ -24,7 +26,7 @@ struct SavedPlaceView: View {
                 .onDelete(perform: { indexSet in
                     for index in indexSet {
                         let willBeDeletedPlace = viewModel.places[index]
-                        viewModel.context.delete(willBeDeletedPlace)
+                        context.delete(willBeDeletedPlace)
                     }
                 })
             }

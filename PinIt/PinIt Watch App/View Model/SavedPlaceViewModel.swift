@@ -10,7 +10,7 @@ import SwiftData
 
 final class SavedPlaceViewModel: ObservableObject {
     @Query var places: [Place]
-    @Environment (\.modelContext) var context
+    
     @Published var showMap = false
     @Published var thePlace: Place = Place(
         emoji: "🍦",

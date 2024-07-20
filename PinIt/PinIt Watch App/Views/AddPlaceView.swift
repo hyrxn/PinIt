@@ -9,6 +9,8 @@ import SwiftUI
 
 struct AddPlaceView: View {
     @StateObject var viewModel = AddPlaceViewModel()
+    @Environment(\.dismiss) var dismiss
+    @Environment(\.modelContext) var context
     
     var isSubmitDisabled: Bool {
         viewModel.placeName.count < 3 || viewModel.placeName.count > 20 || viewModel.placeEmoji.count != 1
@@ -35,7 +37,7 @@ struct AddPlaceView: View {
                 
                 Button {
                     if viewModel.isDataValid() {
-                        viewModel.saveNewPlace()
+                        saveNewPlace()
                         viewModel.showAlert = true
                     } else {
                         viewModel.showInvalidDataAlert = true
@@ -51,6 +53,20 @@ struct AddPlaceView: View {
                 
             }
         }
+    }
+    
+    func saveNewPlace(){
+        let newPlace = Place(
+            emoji: viewModel.placeEmoji,
+            name: viewModel.placeName,
+            date: viewModel.getCurrentDate(),
+            
+            //get the latitude and longitude data first
+            latitude: viewModel.locationManager.location?.coordinate.latitude,
+            longitude: viewModel.locationManager.location?.coordinate.longitude
+        )
+        
+        context.insert(newPlace)
     }
     
 }

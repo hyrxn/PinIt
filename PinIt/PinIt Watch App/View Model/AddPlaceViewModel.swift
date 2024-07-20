@@ -10,10 +10,6 @@ import SwiftUI
 final class AddPlaceViewModel: ObservableObject {
     @EnvironmentObject var locationManager: LocationManager
     
-    /// ??
-    @Environment(\.dismiss) var dismiss
-    @Environment(\.modelContext) var context
-    
     @Published var placeName = ""
     @Published var placeEmoji = ""
     @Published var saveDate = ""
@@ -36,21 +32,6 @@ final class AddPlaceViewModel: ObservableObject {
     func isDataValid() -> Bool {
         return placeName.count >= 3 && placeName.count <= 20 && placeEmoji.count == 1
     }
-    
-    func saveNewPlace(){
-        let newPlace = Place(
-            emoji: placeEmoji,
-            name: placeName,
-            date: getCurrentDate(),
-            
-            //get the latitude and longitude data first
-            latitude: locationManager.location?.coordinate.latitude,
-            longitude: locationManager.location?.coordinate.longitude
-        )
-        
-        context.insert(newPlace)
-    }
-    
     
     func getCurrentDate() -> String {
         let dateFormatter = DateFormatter()
